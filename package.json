@@ -1,0 +1,51 @@
+{
+  "name": "@vangware/window-open-promise",
+  "version": "1.0.0",
+  "description": "Promised Window.open",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "compile:dev": "tsc --sourceMap",
+    "compile:watch": "tsc --sourceMap --watch",
+    "compile": "tsc",
+    "lint": "tslint -c ./tslint.json -p .",
+    "postinstall": "run-s compile prettify",
+    "precommit": "run-s lint",
+    "prettify": "prettier --write 'dist/**/*.{js,ts}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vangware/window-open-promise.git"
+  },
+  "keywords": [
+    "window",
+    "open",
+    "front-end",
+    "front",
+    "javascript",
+    "promise",
+    "promised"
+  ],
+  "author": {
+    "name": "Vangware",
+    "url": "https://vangware.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vangware/window-open-promise/issues"
+  },
+  "homepage": "https://github.com/vangware/window-open-promise#readme",
+  "dependencies": {
+    "@types/node": "^9.4.6",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.10.2",
+    "tslib": "^1.9.0",
+    "typescript": "^2.7.1"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.9.1"
+  }
+}
