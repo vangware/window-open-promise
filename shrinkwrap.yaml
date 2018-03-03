@@ -2,9 +2,9 @@ dependencies:
   '@types/node': 9.4.6
   husky: 0.14.3
   npm-run-all: 4.1.2
-  prettier: 1.10.2
+  prettier: 1.11.1
   tslib: 1.9.0
-  typescript: 2.7.1
+  typescript: 2.7.2
 devDependencies:
   rimraf: 2.6.2
   tslint: 5.9.1
@@ -457,12 +457,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
-  /prettier/1.10.2:
+  /prettier/1.11.1:
     dev: false
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-TcdNoQIWFoHblurqqU6d1ysopjq7UX0oRcT/hJ8qvBAELiYWn+Ugf0AXdnzISEJ7vuhNnQ98N8jR8Sh53x4IZg==
+      integrity: sha512-T/KD65Ot0PB97xTrG8afQ46x3oiVhnfGjGESSI9NWYcG92+OUPZKkwHqGWXH2t9jK1crnQjubECW0FuOth+hxw==
   /ps-tree/1.1.0:
     dependencies:
       event-stream: 3.3.4
@@ -632,12 +632,12 @@ packages:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev'
     resolution:
       integrity: sha512-heMkdeQ9iUc90ynfiNo5Y+GXrEEGy86KMvnSTfHO+Q40AuNQ1lZGXcv58fuU9XTUxI0V7YIN9xPN+CO9b1Gn3w==
-  /typescript/2.7.1:
+  /typescript/2.7.2:
     dev: false
     engines:
       node: '>=4.2.0'
     resolution:
-      integrity: sha512-bqB1yS6o9TNA9ZC/MJxM0FZzPnZdtHj0xWK/IZ5khzVqdpGul/R/EIiHRgFXlwTD7PSIaYVnGKq1QgMCu2mnqw==
+      integrity: sha512-p5TCYZDAO0m4G344hD+wx/LATebLWZNkkh2asWUFqSsD2OrDNhbAHuSjobrmsUmdzjJjEeZVU9g1h3O6vpstnw==
   /validate-npm-package-license/3.0.1:
     dependencies:
       spdx-correct: 1.0.2
@@ -666,8 +666,8 @@ specifiers:
   '@types/node': ^9.4.6
   husky: ^0.14.3
   npm-run-all: ^4.1.2
-  prettier: ^1.10.2
+  prettier: ^1.11.1
   rimraf: ^2.6.2
   tslib: ^1.9.0
   tslint: ^5.9.1
-  typescript: ^2.7.1
+  typescript: ^2.7.2
