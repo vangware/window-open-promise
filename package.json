@@ -1,6 +1,6 @@
 {
   "name": "@vangware/window-open-promise",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Promised Window.open",
   "main": "dist/index",
   "source": "src/index",
