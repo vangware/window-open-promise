@@ -1,11 +1,11 @@
 dependencies:
   '@types/node': 9.6.0
-  husky: 0.14.3
   npm-run-all: 4.1.2
   prettier: 1.11.1
   tslib: 1.9.0
   typescript: 2.8.1
 devDependencies:
+  husky: 0.14.3
   rimraf: 2.6.2
   tslint: 5.9.1
 packages:
@@ -94,7 +94,7 @@ packages:
     resolution:
       integrity: sha512-QUU4ofkDoMIVO7hcx1iPTISs88wsO8jA92RQIm4JAwZvFGGAV2hSAA1NX7oVj2Ej2Q6NDTcRDjPTFrMCRZoJ6g==
   /ci-info/1.1.2:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-uTGIPNx/nSpBdsF6xnseRXLLtfr9VLqkz8ZqHXr3Y7b6SftyRxBGjwMtJj1OhNbmlc1wZzLNAlAcvyIiE8a6ZA==
   /color-convert/1.9.1:
@@ -259,7 +259,7 @@ packages:
       is-ci: 1.1.0
       normalize-path: 1.0.0
       strip-indent: 2.0.0
-    dev: false
+    dev: true
     engines:
       node: '>=4'
     resolution:
@@ -296,7 +296,7 @@ packages:
   /is-ci/1.1.0:
     dependencies:
       ci-info: 1.1.2
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-c7TnwxLePuqIlxHgr7xtxzycJPegNHFuIrBkwbf8hc58//+Op1CqFkyS+xnIMkwn9UsJIwc174BIjkyBmSpjKg==
   /is-date-object/1.0.1:
@@ -385,7 +385,7 @@ packages:
     resolution:
       integrity: sha512-9jjUFbTPfEy3R/ad/2oNbKtW9Hgovl5O1FvFWKkKblNXoN/Oou6+9+KKohPK13Yc3/TyunyWhJp6gvRNR/PPAw==
   /normalize-path/1.0.0:
-    dev: false
+    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -578,7 +578,7 @@ packages:
     resolution:
       integrity: sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
   /strip-indent/2.0.0:
-    dev: false
+    dev: true
     engines:
       node: '>=4'
     resolution:
