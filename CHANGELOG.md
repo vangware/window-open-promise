@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.4
+
+- Updated dependencies.
+
 ## v1.0.3
 
 - Added `yarn` and `npm` lock files.
