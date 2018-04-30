@@ -1,6 +1,6 @@
 {
   "name": "@vangware/window-open-promise",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Promised Window.open",
   "main": "dist/index",
   "source": "src/index",
@@ -38,11 +38,10 @@
   },
   "homepage": "https://github.com/vangware/window-open-promise#readme",
   "dependencies": {
-    "@types/node": "^9.6.0",
     "npm-run-all": "^4.1.2",
-    "prettier": "^1.11.1",
+    "prettier": "^1.12.1",
     "tslib": "^1.9.0",
-    "typescript": "^2.8.1"
+    "typescript": "^2.8.3"
   },
   "devDependencies": {
     "husky": "^0.14.3",
