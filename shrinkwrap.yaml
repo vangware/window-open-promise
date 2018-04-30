@@ -1,18 +1,13 @@
 dependencies:
-  '@types/node': 9.6.0
   npm-run-all: 4.1.2
-  prettier: 1.11.1
+  prettier: 1.12.1
   tslib: 1.9.0
-  typescript: 2.8.1
+  typescript: 2.8.3
 devDependencies:
   husky: 0.14.3
   rimraf: 2.6.2
   tslint: 5.9.1
 packages:
-  /@types/node/9.6.0:
-    dev: false
-    resolution:
-      integrity: sha512-h3YZbOq2+ZoDFI1z8Zx0Ck/xRWkOESVaLdgLdd/c25mMQ1Y2CAkILu9ny5A15S5f32gGcQdaUIZ2jzYr8D7IFg==
   /ansi-regex/2.1.1:
     dev: true
     engines:
@@ -262,6 +257,7 @@ packages:
     dev: true
     engines:
       node: '>=4'
+    requiresBuild: true
     resolution:
       integrity: sha512-e21wivqHpstpoiWA/Yi8eFti8E+sQDSS53cpJsPptPs295QTOQR0ZwnHo2TXy1XOpZFD9rPOd3NpmqTK6uMLJA==
   /inflight/1.0.6:
@@ -457,12 +453,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
-  /prettier/1.11.1:
+  /prettier/1.12.1:
     dev: false
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-T/KD65Ot0PB97xTrG8afQ46x3oiVhnfGjGESSI9NWYcG92+OUPZKkwHqGWXH2t9jK1crnQjubECW0FuOth+hxw==
+      integrity: sha1-wa0g6APndJ+vkFpAnSNn4Gu+cyU=
   /ps-tree/1.1.0:
     dependencies:
       event-stream: 3.3.4
@@ -632,12 +628,12 @@ packages:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev'
     resolution:
       integrity: sha512-heMkdeQ9iUc90ynfiNo5Y+GXrEEGy86KMvnSTfHO+Q40AuNQ1lZGXcv58fuU9XTUxI0V7YIN9xPN+CO9b1Gn3w==
-  /typescript/2.8.1:
+  /typescript/2.8.3:
     dev: false
     engines:
       node: '>=4.2.0'
     resolution:
-      integrity: sha512-Ao/f6d/4EPLq0YwzsQz8iXflezpTkQzqAyenTiw4kCUGr1uPiFLC3+fZ+gMZz6eeI/qdRUqvC+HxIJzUAzEFdg==
+      integrity: sha512-K7g15Bb6Ra4lKf7Iq2l/I5/En+hLIHmxWZGq3D4DIRNFxMNV6j2SHSvDOqs2tGd4UvD/fJvrwopzQXjLrT7Itw==
   /validate-npm-package-license/3.0.1:
     dependencies:
       spdx-correct: 1.0.2
@@ -660,14 +656,13 @@ packages:
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 4
+shrinkwrapMinorVersion: 5
 shrinkwrapVersion: 3
 specifiers:
-  '@types/node': ^9.6.0
   husky: ^0.14.3
   npm-run-all: ^4.1.2
-  prettier: ^1.11.1
+  prettier: ^1.12.1
   rimraf: ^2.6.2
   tslib: ^1.9.0
   tslint: ^5.9.1
-  typescript: ^2.8.1
+  typescript: ^2.8.3
