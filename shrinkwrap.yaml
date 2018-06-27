@@ -1,8 +1,8 @@
 dependencies:
   npm-run-all: 4.1.3
-  prettier: 1.13.4
-  tslib: 1.9.2
-  typescript: 2.9.1
+  prettier: 1.13.6
+  tslib: 1.9.3
+  typescript: 2.9.2
 devDependencies:
   husky: 0.14.3
   rimraf: 2.6.2
@@ -463,12 +463,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
-  /prettier/1.13.4:
+  /prettier/1.13.6:
     dev: false
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-emsEZ2bAigL1lq6ssgkpPm1MIBqgeTvcp90NxOP5XDqprub/V/WS2Hfgih3mS7/1dqTUvhG+sxx1Dv8crnVexA==
+      integrity: sha512-p5eqCNiohWZN++7aJXUVj0JgLqHCPLf9GLIcLBHGNWs4Y9FJOPs6+KNO2WT0udJIQJTbeZFrJkjzjcb8fkAYYQ==
   /ps-tree/1.1.0:
     dependencies:
       event-stream: 3.3.4
@@ -611,8 +611,13 @@ packages:
     resolution:
       integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
   /tslib/1.9.2:
+    dev: true
     resolution:
       integrity: sha512-AVP5Xol3WivEr7hnssHDsaM+lVrVXWUvd1cfXTRkTj80b//6g2wIFEH6hZG0muGZRnHGrfttpdzRk3YlBkWjKw==
+  /tslib/1.9.3:
+    dev: false
+    resolution:
+      integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
   /tslint/5.10.0:
     dependencies:
       babel-code-frame: 6.26.0
@@ -642,12 +647,12 @@ packages:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev'
     resolution:
       integrity: sha512-AE/7uzp32MmaHvNNFES85hhUDHFdFZp6OAiZcd6y4ZKKIg6orJTm8keYWBhIhrJQH3a4LzNKat7ZPXZt5aTf6w==
-  /typescript/2.9.1:
+  /typescript/2.9.2:
     dev: false
     engines:
       node: '>=4.2.0'
     resolution:
-      integrity: sha512-h6pM2f/GDchCFlldnriOhs1QHuwbnmj6/v7499eMHqPeW4V2G0elua2eIc2nu8v2NdHV0Gm+tzX83Hr6nUFjQA==
+      integrity: sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
   /validate-npm-package-license/3.0.3:
     dependencies:
       spdx-correct: 3.0.0
@@ -671,8 +676,8 @@ shrinkwrapVersion: 3
 specifiers:
   husky: ^0.14.3
   npm-run-all: ^4.1.3
-  prettier: ^1.13.4
+  prettier: ^1.13.6
   rimraf: ^2.6.2
-  tslib: ^1.9.2
+  tslib: ^1.9.3
   tslint: ^5.10.0
-  typescript: ^2.9.1
+  typescript: ^2.9.2
