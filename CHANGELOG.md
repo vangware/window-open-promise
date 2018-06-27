@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.6
+
+- Updated dependencies.
+- Added Travis CI.
+- Updated `README.md` with NPM and Travis badges.
+
 ## v1.0.5
 
 - Updated dependencies.
