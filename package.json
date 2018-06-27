@@ -1,6 +1,6 @@
 {
   "name": "@vangware/window-open-promise",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Promised Window.open",
   "main": "dist/index",
   "source": "src/index",
@@ -13,7 +13,8 @@
     "lint": "tslint -c ./tslint.json -p .",
     "postinstall": "run-s compile prettify",
     "precommit": "run-s lint",
-    "prettify": "prettier --write 'dist/**/*.{js,ts}'"
+    "prettify": "prettier --write 'dist/**/*.{js,ts}'",
+    "test": "echo 'No test yet, sorry'"
   },
   "repository": {
     "type": "git",
