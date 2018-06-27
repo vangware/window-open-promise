@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.7
+
+- Added dummy test until real test is implemented (maybe with ava).
+
 ## v1.0.6
 
 - Updated dependencies.
