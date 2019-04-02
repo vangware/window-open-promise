@@ -35,7 +35,6 @@ Thumbs.db
 *.log
 *.pid
 *.seed
-dist
 logs
 node_modules
 npm-debug.log*

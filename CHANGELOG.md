@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.0
+
+- Added ESM support.
+- Added prebuilt CJS (instead of compiling on install).
+- Changed function to take a single config object.
+
 ## v1.1.0
 
 - Changed logic so the window opens immediately.

@@ -1,7 +1,5 @@
 import { featureParser } from "./featureParser";
 import { WindowOpenError } from "./WindowOpenError";
-import { WindowOpenPromiseFunction } from "./WindowOpenPromiseFunction";
-
 /**
  * Promised Window.open.
  * @param url Target URL.
@@ -9,15 +7,14 @@ import { WindowOpenPromiseFunction } from "./WindowOpenPromiseFunction";
  * @param features New window features.
  * @param replace New entry or replace in browser history.
  */
-export const windowOpenPromise: WindowOpenPromiseFunction = async ({
-	url,
-	target,
-	features,
-	replace
-}) => {
-	const newWindow = window.open(url, target, featureParser(features), replace);
-
-	return new Promise<Window>((resolve, reject) => {
+export const windowOpenPromise = async ({ url, target, features, replace }) => {
+	const newWindow = window.open(
+		url,
+		target,
+		featureParser(features),
+		replace
+	);
+	return new Promise((resolve, reject) => {
 		if (newWindow !== null) {
 			resolve(newWindow);
 		} else {
