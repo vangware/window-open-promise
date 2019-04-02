@@ -13,12 +13,14 @@ export const windowOpenPromise: WindowOpenPromiseFunction = async (
 	target?,
 	features?,
 	replace?
-) =>
-	new Promise<Window>((resolve, reject) => {
-		const newWindow = window.open(url, target, features, replace);
+) => {
+	const newWindow = window.open(url, target, features, replace);
+
+	return new Promise<Window>((resolve, reject) => {
 		if (newWindow !== null) {
 			resolve(newWindow);
 		} else {
 			reject(new WindowOpenError());
 		}
 	});
+};
