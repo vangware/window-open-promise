@@ -1,7 +1,7 @@
 {
   "name": "@vangware/window-open-promise",
   "description": "Promised Window.open",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
