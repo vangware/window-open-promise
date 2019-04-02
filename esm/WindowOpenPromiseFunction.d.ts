@@ -1,10 +1,8 @@
 import WindowOpenPromiseOptions from "./WindowOpenPromiseOptions";
-
 /**
  * Promised Window.open interface.
  */
-export type WindowOpenPromiseFunction = (
+export declare type WindowOpenPromiseFunction = (
 	options: WindowOpenPromiseOptions
 ) => Promise<Window>;
-
 export default WindowOpenPromiseFunction;

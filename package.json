@@ -1,7 +1,7 @@
 {
   "name": "@vangware/window-open-promise",
   "description": "Promised Window.open",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/vangware/window-open-promise#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "run-s lint"
+      "pre-commit": "run-s lint compile prettify"
     }
   },
   "keywords": [
@@ -37,21 +37,23 @@
     "window"
   ],
   "license": "MIT",
-  "main": "dist/index",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/vangware/window-open-promise.git"
   },
   "scripts": {
-    "clean": "rimraf ./dist",
-    "compile": "tsc",
-    "compile:dev": "tsc --sourceMap",
-    "compile:watch": "tsc --sourceMap --watch",
+    "clean": "rimraf ./{cjs,esm}",
+    "compile": "run-s compile:*",
+    "compile:cjs": "tsc --project tsconfig.json",
+    "compile:esm": "tsc --project tsconfig.esm.json",
     "lint": "tslint -c ./tslint.json -p .",
-    "postinstall": "run-s compile prettify",
-    "prettify": "prettier --write 'dist/**/*.{js,ts}'",
+    "prettify": "run-s prettify:*",
+    "prettify:cjs": "prettier --write './cjs/**/*.{js,ts}'",
+    "prettify:esm": "prettier --write './esm/**/*.{js,ts}'",
     "test": "echo 'No test yet, sorry'"
   },
-  "source": "src/index",
-  "types": "dist/index"
+  "source": "./src/index.ts",
+  "types": "./esm/index.d.ts"
 }
