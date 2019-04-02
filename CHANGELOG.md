@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.8
+
+- Updated dependencies.
+- Added `@vangware/vangstyle` and made pertinent changes.
+
 ## v1.0.7
 
 - Added dummy test until real test is implemented (maybe with ava).

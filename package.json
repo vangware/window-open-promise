@@ -1,52 +1,57 @@
 {
   "name": "@vangware/window-open-promise",
-  "version": "1.0.7",
   "description": "Promised Window.open",
-  "main": "dist/index",
-  "source": "src/index",
-  "types": "dist/index",
-  "scripts": {
-    "clean": "rimraf ./dist",
-    "compile:dev": "tsc --sourceMap",
-    "compile:watch": "tsc --sourceMap --watch",
-    "compile": "tsc",
-    "lint": "tslint -c ./tslint.json -p .",
-    "postinstall": "run-s compile prettify",
-    "precommit": "run-s lint",
-    "prettify": "prettier --write 'dist/**/*.{js,ts}'",
-    "test": "echo 'No test yet, sorry'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/vangware/window-open-promise.git"
-  },
-  "keywords": [
-    "window",
-    "open",
-    "front-end",
-    "front",
-    "javascript",
-    "promise",
-    "promised"
-  ],
+  "version": "1.0.8",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vangware/window-open-promise/issues"
   },
-  "homepage": "https://github.com/vangware/window-open-promise#readme",
   "dependencies": {
-    "npm-run-all": "^4.1.3",
-    "prettier": "^1.13.6",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4",
     "tslib": "^1.9.3",
-    "typescript": "^2.9.2"
+    "typescript": "^3.4.1"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
-    "rimraf": "^2.6.2",
-    "tslint": "^5.10.0"
-  }
+    "@vangware/vangstyle": "^1.0.1",
+    "husky": "^1.3.1",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.15.0"
+  },
+  "homepage": "https://github.com/vangware/window-open-promise#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-s lint"
+    }
+  },
+  "keywords": [
+    "front",
+    "front-end",
+    "javascript",
+    "open",
+    "promise",
+    "promised",
+    "window"
+  ],
+  "license": "MIT",
+  "main": "dist/index",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vangware/window-open-promise.git"
+  },
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "compile": "tsc",
+    "compile:dev": "tsc --sourceMap",
+    "compile:watch": "tsc --sourceMap --watch",
+    "lint": "tslint -c ./tslint.json -p .",
+    "postinstall": "run-s compile prettify",
+    "prettify": "prettier --write 'dist/**/*.{js,ts}'",
+    "test": "echo 'No test yet, sorry'"
+  },
+  "source": "src/index",
+  "types": "dist/index"
 }
