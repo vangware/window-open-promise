@@ -10,7 +10,7 @@
     "noEmitOnError": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./dist",
+    "outDir": "./cjs",
     "preserveConstEnums": true,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
