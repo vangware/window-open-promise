@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.1
+
+- Fixed JSDocs.
+- Fixed types.
+- Added default values for options.
+
 ## v2.0.0
 
 - Added ESM support.
