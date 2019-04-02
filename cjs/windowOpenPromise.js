@@ -5,12 +5,14 @@ const featureParser_1 = require("./featureParser");
 const WindowOpenError_1 = require("./WindowOpenError");
 /**
  * Promised Window.open.
- * @param url Target URL.
- * @param target Target attribute (_blank, _parent, _self, _top) or name.
- * @param features New window features.
- * @param replace New entry or replace in browser history.
+ * @param options WindowOpenPromise options.
  */
-exports.windowOpenPromise = ({ url, target, features, replace }) =>
+exports.windowOpenPromise = ({
+	url = "",
+	target = "",
+	features = {},
+	replace = false
+}) =>
 	tslib_1.__awaiter(this, void 0, void 0, function*() {
 		const newWindow = window.open(
 			url,
