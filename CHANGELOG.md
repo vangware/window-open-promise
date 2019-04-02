@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.0
+
+- Changed logic so the window opens immediately.
+
 ## v1.0.8
 
 - Updated dependencies.
