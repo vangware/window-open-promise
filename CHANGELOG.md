@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.2
+
+- Moved some unnecessary dependencies to devDependencies.
+
 ## v2.0.1
 
 - Fixed JSDocs.
