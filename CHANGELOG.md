@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.3
+
+- Updated dependencies
+
 ## v2.0.2
 
 - Moved some unnecessary dependencies to devDependencies.
