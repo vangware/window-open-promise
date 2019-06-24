@@ -1,1 +1,0 @@
-export { windowOpenPromise } from "./windowOpenPromise";
