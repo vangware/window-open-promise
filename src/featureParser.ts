@@ -1,10 +1,6 @@
+import { objectMap, typeOf } from "@vangware/micro";
+import booleanFeature from "./booleanFeature";
 import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
-
-/**
- * Parses boolean features into 1/0 values.
- * @param feature Boolean feature value.
- */
-const booleanFeature = (feature: boolean) => (feature ? "1" : "0");
 
 /**
  * Parses features object into features string.
@@ -12,15 +8,15 @@ const booleanFeature = (feature: boolean) => (feature ? "1" : "0");
  */
 export const featureParser = (features?: WindowOpenPromiseFeatures) =>
 	features
-		? Object.keys(features)
-				.map(feature => ({ feature, value: features[feature] }))
-				.map(
-					({ feature, value }) =>
-						`${feature}=${
-							typeof value === "boolean"
-								? booleanFeature(value)
-								: value
-						}`
-				)
+		? objectMap(features, (value, feature) => ({ feature, value }))
+				.map(({ feature, value }) => ({
+					feature,
+					value: typeOf(value).isBoolean
+						? booleanFeature(value as boolean)
+						: value
+				}))
+				.map(({ feature, value }) => `${feature}=${value}`)
 				.join(",")
 		: undefined;
+
+export default featureParser;
