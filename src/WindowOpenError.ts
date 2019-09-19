@@ -10,3 +10,5 @@ export class WindowOpenError extends Error {
 		super(error);
 	}
 }
+
+export default WindowOpenError;
