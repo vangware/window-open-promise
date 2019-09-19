@@ -1,6 +1,6 @@
-import { featureParser } from "./featureParser";
-import { WindowOpenError } from "./WindowOpenError";
-import { WindowOpenPromiseFunction } from "./WindowOpenPromiseFunction";
+import featureParser from "./featureParser";
+import WindowOpenError from "./WindowOpenError";
+import WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
 
 /**
  * Promised Window.open.
@@ -12,7 +12,12 @@ export const windowOpenPromise: WindowOpenPromiseFunction = async ({
 	features = {},
 	replace = false
 }) => {
-	const newWindow = window.open(url, target, featureParser(features), replace);
+	const newWindow = window.open(
+		url,
+		target,
+		featureParser(features),
+		replace
+	);
 
 	return new Promise<Window>((resolve, reject) => {
 		if (newWindow !== null) {
@@ -22,3 +27,5 @@ export const windowOpenPromise: WindowOpenPromiseFunction = async ({
 		}
 	});
 };
+
+export default windowOpenPromise;

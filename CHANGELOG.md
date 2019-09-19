@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.1.0
+
+- Updated dependencies.
+- Added `@vangware/micro` in order to use `typeOf` and `objectMap`.
+- Improved exports/imports and formatting.
+
 ## v2.0.5
 
 - Updated dependencies.
