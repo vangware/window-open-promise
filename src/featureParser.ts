@@ -1,4 +1,4 @@
-import { objectMap, typeOf } from "@vangware/micro";
+import { objectMap, typeOf, when } from "@vangware/micro";
 import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
 
 /**
@@ -6,16 +6,14 @@ import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
  * @param features Features object.
  */
 export const featureParser = (features?: WindowOpenPromiseFeatures) =>
-	features
-		? objectMap(features, (value, feature) => ({ feature, value }))
-				.map(({ feature, value }) => ({
-					feature,
-					value: typeOf(value).isBoolean
-						? value ? "1" : "0"
-						: value
-				}))
-				.map(({ feature, value }) => `${feature}=${value}`)
-				.join(",")
-		: undefined;
+	when(features, definedFeatures =>
+		objectMap(
+			definedFeatures,
+			(value, feature) =>
+				`${feature}=${
+					typeOf(value).isBoolean ? (value ? "1" : "0") : value
+				}`
+		).join(",")
+	);
 
 export default featureParser;
