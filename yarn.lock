@@ -23,22 +23,22 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@types/prettier@^1.18.2":
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.18.2.tgz#069e7d132024d436fd1f5771f6932426a695f230"
-  integrity sha512-2JBasa5Qaj81Qsp/dxX2Njy+MdKC767WytHUDsRM7TYEfQvKPxsnGpnCBlBS1i2Aiv1YwCpmKSbQ6O6v8TpiKg==
+"@types/prettier@1.18.3":
+  version "1.18.3"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.18.3.tgz#64ff53329ce16139f17c3db9d3e0487199972cd8"
+  integrity sha512-48rnerQdcZ26odp+HOvDGX8IcUkYOCuMc2BodWYTe956MqkHlOGAG4oFQ83cjZ0a4GAgj7mb4GUClxYd2Hlodg==
 
-"@vangware/micro@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@vangware/micro/-/micro-1.0.0.tgz#4045b134d1e8299fb5dfb35ddb178d475a3ce85d"
-  integrity sha512-unTfgR6CCqY1gtugk4mDJDJZxgO2JbkSU+taGvhsXKvf5BcZtp44QRXgcf/EOS5RIzQ3rYqRvhaeHWsLOQMERw==
+"@vangware/micro@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@vangware/micro/-/micro-1.1.0.tgz#ae3805ae446a25cc33fb5eb3e0b6c859f96c9f4a"
+  integrity sha512-p4pwq9721c/AuVt7ZqwAmsUItbqgFt1Y+NuzOmMuE7Tzszu8FehoZksynUjA8E0CF9vusDgebXujKAQxwKPVjg==
   dependencies:
     tslib "^1.10.0"
 
-"@vangware/vangstyle@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@vangware/vangstyle/-/vangstyle-1.4.1.tgz#c6775437cfb39b07c0d192373de3520a1127e38d"
-  integrity sha512-YnADXyQGIs2nVkejUAvgjVzClkNKHR4oxo8eQ57b4YIL7JcEseaVwFGofD0g5y+JbDYoKXJ5BUOxgggzrCRBLQ==
+"@vangware/vangstyle@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@vangware/vangstyle/-/vangstyle-1.4.2.tgz#f6a0d8d4f8eafe344db16017403910371b427d41"
+  integrity sha512-LTYHzz7TVcI0CJ6YCSyUTYUJjrbTquFT7kXLeF2dFEKKDruXD++QTAo1ZEdEn06u7rPFC3gy9jwgbN5ybfRk+g==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -307,10 +307,10 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
   integrity sha512-7T/BxH19zbcCTa8XkMlbK5lTo1WtgkFi3GvdWEyNuc4Vex7/9Dqbnpsf4JMydcfj9HCg4zUWFTL3Za6lapg5/w==
 
-husky@3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.5.tgz#d7db27c346645a8dc52df02aa534a377ad7925e0"
-  integrity sha512-cKd09Jy9cDyNIvAdN2QQAP/oA21sle4FWXjIMDttailpLAYZuBE7WaPmhrkj+afS8Sj9isghAtFvWSQ0JiwOHg==
+husky@3.0.8:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.8.tgz#8de3fed26ce9b43034ef51013c4ad368b6b74ea8"
+  integrity sha512-HFOsgcyrX3qe/rBuqyTt+P4Gxn5P0seJmr215LAZ/vnwK3jWB3r0ck7swbzGRUbufCf9w/lgHPVbF/YXQALgfQ==
   dependencies:
     chalk "^2.4.2"
     cosmiconfig "^5.2.1"
