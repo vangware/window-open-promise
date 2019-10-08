@@ -1,5 +1,5 @@
 dependencies:
-  '@vangware/micro': 1.1.0
+  '@vangware/micro': 1.2.0
   tslib: 1.10.0
 devDependencies:
   '@types/prettier': 1.18.3
@@ -35,12 +35,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-48rnerQdcZ26odp+HOvDGX8IcUkYOCuMc2BodWYTe956MqkHlOGAG4oFQ83cjZ0a4GAgj7mb4GUClxYd2Hlodg==
-  /@vangware/micro/1.1.0:
+  /@vangware/micro/1.2.0:
     dependencies:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-p4pwq9721c/AuVt7ZqwAmsUItbqgFt1Y+NuzOmMuE7Tzszu8FehoZksynUjA8E0CF9vusDgebXujKAQxwKPVjg==
+      integrity: sha512-WwQznW7WfZstsIKKmtqpwkLgxSkxMif7eVWIW+y+MndVBxhhz2tks2wLVG/LsJte0BHmRq7PtlkM2r9fli5g+g==
   /@vangware/vangstyle/1.4.2:
     dev: true
     resolution:
@@ -878,7 +878,7 @@ packages:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
   '@types/prettier': 1.18.3
-  '@vangware/micro': 1.1.0
+  '@vangware/micro': 1.2.0
   '@vangware/vangstyle': 1.4.2
   husky: 3.0.8
   npm-run-all: ^4.1.5

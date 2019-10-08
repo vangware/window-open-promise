@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.2.0
+
+- Update changelog.
+- Upgrade dependencies.
+- Deeper `@vangware/micro` integration.
+
+## v2.1.1
+
+- Upgrade dependencies.
+- Version bump.
+- Remove booleanFeature function.
+
 ## v2.1.0
 
 - Updated dependencies.
