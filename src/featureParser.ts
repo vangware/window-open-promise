@@ -1,5 +1,4 @@
 import { objectMap, typeOf } from "@vangware/micro";
-import booleanFeature from "./booleanFeature";
 import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
 
 /**
@@ -12,7 +11,7 @@ export const featureParser = (features?: WindowOpenPromiseFeatures) =>
 				.map(({ feature, value }) => ({
 					feature,
 					value: typeOf(value).isBoolean
-						? booleanFeature(value as boolean)
+						? value ? "1" : "0"
 						: value
 				}))
 				.map(({ feature, value }) => `${feature}=${value}`)
