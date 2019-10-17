@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.2.1
+
+- Upgrade dependencies.
+
 ## v2.2.0
 
 - Update changelog.
