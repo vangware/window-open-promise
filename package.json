@@ -1,7 +1,7 @@
 {
   "name": "@vangware/window-open-promise",
   "description": "Promised Window.open",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -10,7 +10,7 @@
     "url": "https://github.com/vangware/window-open-promise/issues"
   },
   "dependencies": {
-    "@vangware/micro": "1.3.0",
+    "@vangware/micro": "1.4.2",
     "tslib": "^1.10.0"
   },
   "devDependencies": {
