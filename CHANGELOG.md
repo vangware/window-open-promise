@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.3.0
+
+- Upgrade dependencies.
+- Target is now ESNExt (sorry if you were still on ES2015).
+
 ## v2.2.1
 
 - Upgrade dependencies.
