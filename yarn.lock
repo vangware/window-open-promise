@@ -28,10 +28,10 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.18.3.tgz#64ff53329ce16139f17c3db9d3e0487199972cd8"
   integrity sha512-48rnerQdcZ26odp+HOvDGX8IcUkYOCuMc2BodWYTe956MqkHlOGAG4oFQ83cjZ0a4GAgj7mb4GUClxYd2Hlodg==
 
-"@vangware/micro@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@vangware/micro/-/micro-1.3.0.tgz#20fbb8ec858c86bd8674ded65f17dbdfb96466c4"
-  integrity sha512-mzbxmNxpU05aquGyN/XmhZTK09frSzz4s2azJRhg32jFZV2uyFt4p8dxjr6byjPpRWLPY0wPHay+lpp0rm323w==
+"@vangware/micro@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@vangware/micro/-/micro-2.0.0.tgz#cd3a1804ca54e77ea9caed964065d073143c4f1d"
+  integrity sha512-yt4+26x+RmTXURA9T4XFHC+5Gf+/w6zpQgFPzU9dvWgnmx6btohAZEzFKvmOb+Qe6VhH3Ry6o090S9x2kplrSA==
   dependencies:
     tslib "^1.10.0"
 
