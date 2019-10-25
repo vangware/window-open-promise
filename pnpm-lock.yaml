@@ -1,5 +1,5 @@
 dependencies:
-  '@vangware/micro': 1.4.2
+  '@vangware/micro': 2.0.0
   tslib: 1.10.0
 devDependencies:
   '@types/prettier': 1.18.3
@@ -35,12 +35,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-48rnerQdcZ26odp+HOvDGX8IcUkYOCuMc2BodWYTe956MqkHlOGAG4oFQ83cjZ0a4GAgj7mb4GUClxYd2Hlodg==
-  /@vangware/micro/1.4.2:
+  /@vangware/micro/2.0.0:
     dependencies:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-huz/lQA12UDzVfhdbElBasiQqc9CTv7XmSP4CjNOkVY/oTNiGxHSON6IH3Iw1SNFzbXmM85xNM2q7tUgxjFTGA==
+      integrity: sha512-yt4+26x+RmTXURA9T4XFHC+5Gf+/w6zpQgFPzU9dvWgnmx6btohAZEzFKvmOb+Qe6VhH3Ry6o090S9x2kplrSA==
   /@vangware/vangstyle/1.4.4:
     dev: true
     resolution:
@@ -281,10 +281,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-J9dlskqUXK1OeTOYBEn5s8aMukWMwWfs+rPTn/jn50Ux4MNXVhubL1wu/j2t+H4NVI+cXEcCaYellqaPVGXNqQ==
-  /graceful-fs/4.2.2:
+  /graceful-fs/4.2.3:
     dev: true
     resolution:
-      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
+      integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
   /has-flag/3.0.0:
     dev: true
     engines:
@@ -419,7 +419,7 @@ packages:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
   /load-json-file/4.0.0:
     dependencies:
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.3
       parse-json: 4.0.0
       pify: 3.0.0
       strip-bom: 3.0.0
@@ -871,7 +871,7 @@ packages:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
   '@types/prettier': 1.18.3
-  '@vangware/micro': 1.4.2
+  '@vangware/micro': 2.0.0
   '@vangware/vangstyle': 1.4.4
   husky: 3.0.9
   npm-run-all: ^4.1.5
