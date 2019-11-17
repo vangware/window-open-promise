@@ -1,9 +1,15 @@
 # Changelog
 
+## v2.3.3
+
+- Fixed README.md.
+- Fixed config related issues.
+
 ## v2.3.2
 
 - Upgrade dependencies.
 - Added LICENSE file.
+- Improved TS config.
 
 ## v2.3.1
 

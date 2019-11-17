@@ -1,7 +1,7 @@
-# window-open-promise
+# @vangware/window-open-promise
 
-[![[NPM Version]](https://img.shields.io/npm/v/@vangware/window-open-promise.svg?style=flat-square)](https://npm.im/@vangware/window-open-promise)
-[![[Build Status]](https://img.shields.io/travis/vangware/window-open-promise.svg?style=flat-square)](https://travis-ci.org/vangware/window-open-promise)
+![NPM Version](https://img.shields.io/npm/v/@vangware/window-open-promise.svg?style=flat-square)
+![Build Status](https://img.shields.io/travis/vangware/window-open-promise.svg?style=flat-square)
 
 Promised Window.open.
 
