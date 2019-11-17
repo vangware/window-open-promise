@@ -7,7 +7,7 @@ import WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
  * Promised Window.open.
  * @param options WindowOpenPromise options.
  */
-export const windowOpenPromise: WindowOpenPromiseFunction = async ({
+export const windowOpenPromise: WindowOpenPromiseFunction = ({
 	url = EMPTY_STRING,
 	target = EMPTY_STRING,
 	features = EMPTY_OBJECT,

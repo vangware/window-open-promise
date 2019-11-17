@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.3.2
+
+- Upgrade dependencies.
+- Added LICENSE file.
+
 ## v2.3.1
 
 - Upgrade dependencies.
