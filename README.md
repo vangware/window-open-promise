@@ -21,3 +21,19 @@ windowOpenPromise()
     console.error("This will log if the new window can't be opened.");
   });
 ```
+
+Or if you feel you need more sugar:
+
+```typescript
+import { windowOpenPromise } from "@vangware/window-open-promise";
+
+try {
+    const newWindow = await windowOpenPromise()
+    newWindow.console.log("This will log in the new window.");
+    newWindow.addEventListener("beforeunload", event => {
+      console.log("This will log when the new window is closed.");
+    });
+} catch  {
+    console.error("This will log if the new window can't be opened.");
+}
+```
