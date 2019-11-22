@@ -5,7 +5,7 @@ import WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
 
 /**
  * Promised Window.open.
- * @param options WindowOpenPromise options.
+ * @param options - WindowOpenPromise options.
  */
 export const windowOpenPromise: WindowOpenPromiseFunction = ({
 	url = EMPTY_STRING,

@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.3.4
+
+- Dependency upgrade.
+- README.md update to reflect the name of the package.
+
 ## v2.3.3
 
 - Fixed README.md.
