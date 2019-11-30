@@ -3,26 +3,26 @@ import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
 /**
  * WindowOpenPromise options.
  */
-export interface WindowOpenPromiseOptions {
+export type WindowOpenPromiseOptions = {
 	/**
 	 * WindowOpenPromise features.
 	 */
-	features?: WindowOpenPromiseFeatures;
+	readonly features?: WindowOpenPromiseFeatures;
 
 	/**
 	 * WindowOpenPromise replace.
 	 */
-	replace?: boolean;
+	readonly replace?: boolean;
 
 	/**
 	 * WindowOpenPromise target.
 	 */
-	target?: string;
+	readonly target?: string;
 
 	/**
 	 * WindowOpenPromise url.
 	 */
-	url?: string;
-}
+	readonly url?: string;
+};
 
 export default WindowOpenPromiseOptions;

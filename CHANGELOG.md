@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.4.0
+
+- Dependency upgrade.
+- Now we are more "functionally pure".
+
 ## v2.3.4
 
 - Dependency upgrade.

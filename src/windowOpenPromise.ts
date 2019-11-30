@@ -1,6 +1,5 @@
 import { EMPTY_OBJECT, EMPTY_STRING, when } from "@vangware/micro";
 import featureParser from "./featureParser";
-import WindowOpenError from "./WindowOpenError";
 import WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
 
 /**
@@ -13,9 +12,12 @@ export const windowOpenPromise: WindowOpenPromiseFunction = ({
 	features = EMPTY_OBJECT,
 	replace = false
 }) =>
-	(newWindow =>
-		new Promise<Window>((resolve, reject) =>
-			when(newWindow, resolve, () => reject(new WindowOpenError()))
-		))(window.open(url, target, featureParser(features), replace));
+	new Promise<Window>((resolve, reject) =>
+		when(
+			window.open(url, target, featureParser(features), replace),
+			resolve,
+			reject
+		)
+	);
 
 export default windowOpenPromise;

@@ -8,7 +8,7 @@ Promised Window.open.
 ## Usage
 
 ```typescript
-import { windowOpenPromise } from "@vangware/window-open-promise";
+import windowOpenPromise from "@vangware/window-open-promise";
 
 windowOpenPromise()
   .then(newWindow => {
@@ -25,7 +25,7 @@ windowOpenPromise()
 Or if you feel you need more sugar:
 
 ```typescript
-import { windowOpenPromise } from "@vangware/window-open-promise";
+import windowOpenPromise from "@vangware/window-open-promise";
 
 try {
     const newWindow = await windowOpenPromise()
