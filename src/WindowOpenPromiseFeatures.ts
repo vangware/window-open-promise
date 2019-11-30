@@ -1,126 +1,126 @@
 /**
  * WindowOpenPromise features.
  */
-export interface WindowOpenPromiseFeatures {
+export type WindowOpenPromiseFeatures = {
 	/**
 	 * WindowOpenPromise is displayed always below.
 	 */
-	alwaysLowered?: boolean;
+	readonly alwaysLowered?: boolean;
 
 	/**
 	 * WindowOpenPromise is displayed always on top of all windows.
 	 */
-	alwaysOnTop?: boolean;
+	readonly alwaysOnTop?: boolean;
 
 	/**
 	 * WindowOpenPromise is displayed always on top of other browser windows.
 	 */
-	alwaysRaised?: boolean;
+	readonly alwaysRaised?: boolean;
 
 	/**
 	 * WindowOpenPromise centered in relation to parent (requires chrome true).
 	 */
-	center?: boolean;
+	readonly center?: boolean;
 
 	/**
 	 * WindowOpenPromise opens in a window only fashion.
 	 */
-	chrome?: boolean;
+	readonly chrome?: boolean;
 
 	/**
 	 * WindowOpenPromise has a close button.
 	 */
-	close?: boolean;
+	readonly close?: boolean;
 
 	/**
 	 * WindowOpenPromise opens in a dialog fashion (requires chrome true).
 	 */
-	dialog?: boolean;
+	readonly dialog?: boolean;
 
 	/**
 	 * WindowOpenPromise height (minimum 100).
 	 */
-	height?: number;
+	readonly height?: number;
 
 	/**
 	 * WindowOpenPromise left position.
 	 */
-	left?: number;
+	readonly left?: number;
 
 	/**
 	 * WindowOpenPromise renders the location/url bar.
 	 */
-	locationBar?: boolean;
+	readonly locationBar?: boolean;
 
 	/**
 	 * WindowOpenPromise renders the menu bar.
 	 */
-	menuBar?: boolean;
+	readonly menuBar?: boolean;
 
 	/**
 	 * WindowOpenPromise is minimizable (requires dialog true).
 	 */
-	minimizable?: boolean;
+	readonly minimizable?: boolean;
 
 	/**
 	 * WindowOpenPromise opens in a modal fashion.
 	 */
-	modal?: boolean;
+	readonly modal?: boolean;
 
 	/**
 	 * WindowOpenPromise can't access it's opener.
 	 */
-	noOpener?: boolean;
+	readonly noOpener?: boolean;
 
 	/**
 	 * WindowOpenPromise outer height (minimum 100).
 	 */
-	outerHeight?: number;
+	readonly outerHeight?: number;
 
 	/**
 	 * WindowOpenPromise outer width (minimum 100).
 	 */
-	outerWidth?: number;
+	readonly outerWidth?: number;
 
 	/**
 	 * WindowOpenPromise renders the location/url bar.
 	 */
-	personalBar?: boolean;
+	readonly personalBar?: boolean;
 
 	/**
 	 * WindowOpenPromise is resizable.
 	 */
-	resizable?: boolean;
+	readonly resizable?: boolean;
 
 	/**
 	 * WindowOpenPromise has scrollbars.
 	 */
-	scrollbars?: boolean;
+	readonly scrollbars?: boolean;
 
 	/**
 	 * WindowOpenPromise renders the status bar.
 	 */
-	statusBar?: boolean;
+	readonly statusBar?: boolean;
 
 	/**
 	 * WindowOpenPromise renders the title bar.
 	 */
-	titleBar?: boolean;
+	readonly titleBar?: boolean;
 
 	/**
 	 * WindowOpenPromise renders the tool bar.
 	 */
-	toolBar?: boolean;
+	readonly toolBar?: boolean;
 
 	/**
 	 * WindowOpenPromise top position.
 	 */
-	top?: number;
+	readonly top?: number;
 
 	/**
 	 * WindowOpenPromise width (minimum 100).
 	 */
-	width?: number;
-}
+	readonly width?: number;
+};
 
 export default WindowOpenPromiseFeatures;
