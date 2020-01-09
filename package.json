@@ -1,74 +1,74 @@
 {
-	"name": "@vangware/window-open-promise",
-	"description": "Promised Window.open",
-	"version": "2.4.1",
-	"author": {
-		"name": "Vangware",
-		"url": "https://vangware.com"
-	},
-	"bugs": {
-		"url": "https://github.com/vangware/window-open-promise/issues"
-	},
-	"dependencies": {
-		"@vangware/micro": "^4.0.1"
-	},
-	"devDependencies": {
-		"@types/prettier": "^1.19.0",
-		"@typescript-eslint/eslint-plugin": "^2.9.0",
-		"@typescript-eslint/parser": "^2.9.0",
-		"@vangware/vangstyle": "^4.0.1",
-		"eslint": "^6.7.1",
-		"eslint-config-prettier": "^6.7.0",
-		"eslint-plugin-ban": "^1.3.0",
-		"eslint-plugin-functional": "^1.0.0",
-		"eslint-plugin-import": "^2.18.2",
-		"eslint-plugin-no-null": "^1.0.2",
-		"eslint-plugin-prefer-arrow": "^1.1.6",
-		"eslint-plugin-prettier": "^3.1.1",
-		"husky": "^3.1.0",
-		"npm-run-all": "^4.1.5",
-		"prettier": "^1.19.1",
-		"rimraf": "^3.0.0",
-		"typescript": "^3.7.2"
-	},
-	"files": [
-		"cjs",
-		"esm"
-	],
-	"homepage": "https://github.com/vangware/window-open-promise#readme",
-	"husky": {
-		"hooks": {
-			"pre-commit": "run-s lint"
-		}
-	},
-	"keywords": [
-		"front",
-		"front-end",
-		"javascript",
-		"open",
-		"promise",
-		"promised",
-		"window"
-	],
-	"license": "MIT",
-	"main": "./cjs/index.js",
-	"module": "./esm/index.js",
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/vangware/window-open-promise.git"
-	},
-	"scripts": {
-		"clean": "rimraf ./{cjs,esm}",
-		"compile": "run-s compile:*",
-		"compile:cjs": "tsc --project tsconfig.json",
-		"compile:esm": "tsc --project tsconfig.esm.json",
-		"lint": "eslint src/*.ts",
-		"prepublishOnly": "run-s compile prettify",
-		"prettify": "run-s prettify:*",
-		"prettify:cjs": "prettier --write './cjs/**/*.{js,ts}'",
-		"prettify:esm": "prettier --write './esm/**/*.{js,ts}'",
-		"test": "echo 'No test yet, sorry'"
-	},
-	"source": "./src/index.ts",
-	"types": "./esm/index.d.ts"
+  "name": "@vangware/window-open-promise",
+  "description": "Promised Window.open",
+  "version": "2.4.2",
+  "author": {
+    "name": "Vangware",
+    "url": "https://vangware.com"
+  },
+  "bugs": {
+    "url": "https://github.com/vangware/window-open-promise/issues"
+  },
+  "dependencies": {
+    "@vangware/micro": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/prettier": "^1.19.0",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "@vangware/vangstyle": "^4.0.9",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-ban": "^1.4.0",
+    "eslint-plugin-functional": "^2.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-prefer-arrow": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.7.4"
+  },
+  "files": [
+    "cjs",
+    "esm"
+  ],
+  "homepage": "https://github.com/vangware/window-open-promise#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-s lint"
+    }
+  },
+  "keywords": [
+    "front",
+    "front-end",
+    "javascript",
+    "open",
+    "promise",
+    "promised",
+    "window"
+  ],
+  "license": "MIT",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vangware/window-open-promise.git"
+  },
+  "scripts": {
+    "clean": "rimraf ./{cjs,esm}",
+    "compile": "run-s compile:*",
+    "compile:cjs": "tsc --project tsconfig.json",
+    "compile:esm": "tsc --project tsconfig.esm.json",
+    "lint": "eslint src/*.ts",
+    "prepublishOnly": "run-s compile prettify",
+    "prettify": "run-s prettify:*",
+    "prettify:cjs": "prettier --write './cjs/**/*.{js,ts}'",
+    "prettify:esm": "prettier --write './esm/**/*.{js,ts}'",
+    "test": "echo 'No test yet, sorry'"
+  },
+  "source": "./src/index.ts",
+  "types": "./esm/index.d.ts"
 }
