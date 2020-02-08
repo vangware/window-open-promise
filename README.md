@@ -10,16 +10,19 @@ Promised Window.open.
 ```typescript
 import windowOpenPromise from "@vangware/window-open-promise";
 
-windowOpenPromise()
-  .then(newWindow => {
-    newWindow.console.log("This will log in the new window.");
-    newWindow.addEventListener("beforeunload", event => {
-      console.log("This will log when the new window is closed.");
+windowOpenPromise({
+    url: "https://example.com", // Optional, you might want to open an empty window
+    features: { alwaysOnTop: true }
+})
+    .then(newWindow => {
+        newWindow.console.log("This will log in the new window.");
+        newWindow.addEventListener("beforeunload", _event => {
+            console.log("This will log when the new window is closed.");
+        });
+    })
+    .catch(_error => {
+        console.error("This will log if the new window can't be opened.");
     });
-  })
-  .catch(error => {
-    console.error("This will log if the new window can't be opened.");
-  });
 ```
 
 Or if you feel you need more sugar:
@@ -28,12 +31,15 @@ Or if you feel you need more sugar:
 import windowOpenPromise from "@vangware/window-open-promise";
 
 try {
-    const newWindow = await windowOpenPromise()
+    const newWindow = await windowOpenPromise({
+        url: "https://example.com", // Optional, you might want to open an empty window
+        features: { alwaysOnTop: true }
+    })
     newWindow.console.log("This will log in the new window.");
-    newWindow.addEventListener("beforeunload", event => {
+    newWindow.addEventListener("beforeunload", _event => {
       console.log("This will log when the new window is closed.");
     });
-} catch  {
+} catch (_error) {
     console.error("This will log if the new window can't be opened.");
 }
 ```
