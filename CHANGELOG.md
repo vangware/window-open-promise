@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.4.5
+
+- Dependency upgrade.
+- README.md update with example of the options received by windowOpenPromise.
+- Version bump.
+
 ## 2.4.4
 
 - Dependency upgrade.
