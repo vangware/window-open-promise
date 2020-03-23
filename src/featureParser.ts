@@ -1,5 +1,5 @@
 import { isBoolean, objectMap, when } from "@vangware/micro";
-import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
+import type WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
 
 /**
  * Parses features object into features string.
