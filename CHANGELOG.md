@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.5.0
+
+- Dependency upgrade.
+- Exported types/utils from index.
+- Version bump.
+
 ## 2.4.4
 
 - Dependency upgrade.
