@@ -1,4 +1,4 @@
-import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
+import type WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
 
 /**
  * WindowOpenPromise options.
