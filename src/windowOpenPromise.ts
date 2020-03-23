@@ -1,6 +1,6 @@
 import { EMPTY_OBJECT, EMPTY_STRING, when } from "@vangware/micro";
 import featureParser from "./featureParser";
-import WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
+import type WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
 
 /**
  * Promised Window.open.
