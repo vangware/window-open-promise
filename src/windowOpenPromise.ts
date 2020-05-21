@@ -1,4 +1,5 @@
 import { isNull } from "@vangware/micro";
+import { ERROR_MESSAGE } from "./constants";
 import featureParser from "./featureParser";
 import type WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
 
@@ -21,7 +22,7 @@ export const windowOpenPromise: WindowOpenPromiseFunction = ({
 		);
 
 		return isNull(newWindow)
-			? reject(new Error("Window can't be opened"))
+			? reject(new Error(ERROR_MESSAGE))
 			: resolve(newWindow);
 	});
 
