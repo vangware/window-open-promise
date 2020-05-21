@@ -2,10 +2,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.5.4
+
+- Dependency upgrade.
+- Logo updated in `README.md`.
+- More readable code in `featureParser.ts`.
+
 ## 2.5.3
 
 - Dependency upgrade.
-- Logo added to README.md.
+- Logo added to `README.md`.
 
 ## 2.5.2
 
@@ -23,7 +29,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## 2.4.5
 
 - Dependency upgrade.
-- README.md update with example of the options received by windowOpenPromise.
+- `README.md` update with example of the options received by windowOpenPromise.
 - Version bump.
 
 ## 2.4.4

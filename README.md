@@ -1,4 +1,4 @@
-![@vangware/window-open-promise logo](https://i.imgur.com/mauHYI6.png)
+![@vangware/window-open-promise logo](https://i.imgur.com/2v1Pcc0.png)
 
 ![NPM Version](https://img.shields.io/npm/v/@vangware/window-open-promise.svg?style=flat-square)
 ![Build Status](https://img.shields.io/travis/vangware/window-open-promise.svg?style=flat-square)
