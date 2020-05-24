@@ -7,11 +7,13 @@ Promised Window.open.
 
 ## Usage
 
+### 📦 Node
+
 ```typescript
 import windowOpenPromise from "@vangware/window-open-promise";
 
 windowOpenPromise({
-    url: "https://example.com", // Optional, you might want to open an empty window
+    url: "https://example.com", // URL is not required, you can open a blank window
     features: { alwaysOnTop: true }
 })
     .then(newWindow => {
@@ -25,14 +27,14 @@ windowOpenPromise({
     });
 ```
 
-Or if you feel you need more sugar:
+### 🦕 Deno
 
 ```typescript
-import windowOpenPromise from "@vangware/window-open-promise";
+import windowOpenPromise from "http://cdn.pika.dev/@vangware/window-open-promise";
 
 try {
     const newWindow = await windowOpenPromise({
-        url: "https://example.com", // Optional, you might want to open an empty window
+        url: "https://example.com", // URL is not required, you can open a blank window
         features: { alwaysOnTop: true }
     })
     newWindow.console.log("This will log in the new window.");
