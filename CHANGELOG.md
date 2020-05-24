@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.6.0
+
+- Dependency upgrade.
+- Updated `README.md` with usage instructions for Deno :D
+
 ## 2.5.4
 
 - Dependency upgrade.
