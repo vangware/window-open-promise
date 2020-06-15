@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.6.3
+
+- Dependency upgrade.
+
 ## 2.6.2
 
 - Dependency upgrade (I seriously need to add tests at some point).
