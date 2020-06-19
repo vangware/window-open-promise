@@ -17,7 +17,6 @@
     "outDir": "./cjs",
     "preserveConstEnums": true,
     "strict": true,
-    "suppressImplicitAnyIndexErrors": true,
     "target": "ES2018"
   }
 }
