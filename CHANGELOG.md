@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.6.5
+
+- Dependency upgrade.
+- Better ESM output (with JS extension).
+- Removed typed imports until they behave better with bundlers.
+
 ## 2.6.4
 
 - Dependency upgrade.
