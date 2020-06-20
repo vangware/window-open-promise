@@ -1,7 +1,7 @@
 import { isNull } from "@vangware/micro";
 import { ERROR_MESSAGE } from "./constants";
 import featureParser from "./featureParser";
-import type WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
+import WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
 
 /**
  * Promised Window.open.
