@@ -4,7 +4,7 @@ import {
 	FEATURE_ENABLED,
 	FEATURE_SEPARATOR
 } from "./constants";
-import type WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
+import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
 
 /**
  * Parses features object into features string.
