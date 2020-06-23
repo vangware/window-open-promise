@@ -1,4 +1,4 @@
-import { isNull } from "@vangware/micro";
+import { isNull } from "@vangware/utils";
 import { ERROR_MESSAGE } from "./constants";
 import featureParser from "./featureParser";
 import WindowOpenPromiseFunction from "./WindowOpenPromiseFunction";
