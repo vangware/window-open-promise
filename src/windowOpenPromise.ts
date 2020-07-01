@@ -13,17 +13,13 @@ export const windowOpenPromise: WindowOpenPromiseFunction = ({
 	features = {},
 	replace = false
 }) =>
-	new Promise<Window>((resolve, reject) => {
-		const newWindow = window.open(
-			url,
-			target,
-			featureParser(features),
-			replace
-		);
-
-		return isNull(newWindow)
-			? reject(new Error(ERROR_MESSAGE))
-			: resolve(newWindow);
-	});
+	new Promise<Window>((resolve, reject) =>
+		(newWindow =>
+			isNull(newWindow)
+				? reject(new Error(ERROR_MESSAGE))
+				: resolve(newWindow))(
+			window.open(url, target, featureParser(features), replace)
+		)
+	);
 
 export default windowOpenPromise;

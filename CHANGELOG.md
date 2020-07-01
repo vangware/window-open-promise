@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.8.0
+
+- Dependency upgrade.
+- Small change in the internals to make it simpler and lighter.
+
 ## 2.7.1
 
 - Dependency upgrade.
