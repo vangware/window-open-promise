@@ -10,8 +10,8 @@ import WindowOpenPromiseFeatures from "./WindowOpenPromiseFeatures";
  * Parses features object into features string.
  * @param features Features object.
  */
-export const featureParser = (features: WindowOpenPromiseFeatures = {}) => {
-	const featureMap = arrayMap(
+export const featureParser = (features: WindowOpenPromiseFeatures = {}) =>
+	arrayMap(
 		([feature, value]: Entry<WindowOpenPromiseFeatures>) =>
 			`${feature}=${
 				isBoolean(value)
@@ -20,10 +20,6 @@ export const featureParser = (features: WindowOpenPromiseFeatures = {}) => {
 						: FEATURE_DISABLED
 					: value
 			}`
-	);
-	const featureEntries = objectEntries(features);
-
-	return featureMap(featureEntries).join(FEATURE_SEPARATOR);
-};
+	)(objectEntries(features)).join(FEATURE_SEPARATOR);
 
 export default featureParser;
