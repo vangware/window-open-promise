@@ -1,7 +1,7 @@
 {
   "name": "@vangware/window-open-promise",
   "description": "Promised Window.open",
-  "version": "2.8.2",
+  "version": "2.8.3",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -10,13 +10,13 @@
     "url": "https://github.com/vangware/window-open-promise/issues"
   },
   "dependencies": {
-    "@vangware/utils": "^2.0.1"
+    "@vangware/utils": "^2.1.4"
   },
   "devDependencies": {
     "@types/prettier": "^2.0.2",
-    "@typescript-eslint/eslint-plugin": "^3.6.0",
-    "@typescript-eslint/parser": "^3.6.0",
-    "@vangware/base": "^1.0.6",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "@vangware/base": "^1.0.7",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-node": "^0.3.4",
