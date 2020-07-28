@@ -1,4 +1,4 @@
-import WindowOpenPromiseOptions from "./WindowOpenPromiseOptions";
+import { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
 
 /**
  * Promised Window.open interface.

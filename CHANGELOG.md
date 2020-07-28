@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.8.5
+
+- Dependency upgrade.
+- Update Travis config to use latest version of node.
+
 ## 2.8.4
 
 - Dependency upgrade.
