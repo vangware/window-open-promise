@@ -33,7 +33,7 @@ windowOpenPromise({
 ### 🦕 Deno
 
 ```typescript
-import windowOpenPromise from "http://cdn.pika.dev/@vangware/window-open-promise";
+import windowOpenPromise from "https://cdn.skypack.dev/@vangware/window-open-promise";
 
 try {
     const newWindow = await windowOpenPromise({
