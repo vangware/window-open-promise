@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.0.0
+
+- :arrow_up: major dependency upgrade (new TS version!).
+- :art: logo update.
+
 ## 2.8.6
 
 - Dependency upgrade.
