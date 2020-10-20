@@ -5,7 +5,8 @@
     "lib": [
       "dom",
       "es2018",
-      "esnext.bigint"
+      "ESNext.Array",
+      "ESNext.BigInt"
     ],
     "listEmittedFiles": true,
     "module": "commonjs",
