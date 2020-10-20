@@ -1,4 +1,10 @@
-import { arrayMap, Entry, isBoolean, objectEntries } from "@vangware/utils";
+import {
+	arrayJoin,
+	arrayMap,
+	Entry,
+	isBoolean,
+	objectEntries
+} from "@vangware/utils";
 import {
 	FEATURE_DISABLED,
 	FEATURE_ENABLED,
@@ -11,15 +17,17 @@ import { WindowOpenPromiseFeatures } from "./WindowOpenPromiseFeatures";
  * @param features Features object.
  */
 export const featureParser = (features: WindowOpenPromiseFeatures = {}) =>
-	arrayMap(
-		([feature, value]: Entry<WindowOpenPromiseFeatures>) =>
-			`${feature}=${
-				isBoolean(value)
-					? value
-						? FEATURE_ENABLED
-						: FEATURE_DISABLED
-					: value
-			}`
-	)(objectEntries(features)).join(FEATURE_SEPARATOR);
+	arrayJoin(FEATURE_SEPARATOR)(
+		arrayMap(
+			([feature, value]: Entry<WindowOpenPromiseFeatures>) =>
+				`${feature}=${
+					isBoolean(value)
+						? value
+							? FEATURE_ENABLED
+							: FEATURE_DISABLED
+						: value
+				}`
+		)(objectEntries(features))
+	);
 
 export default featureParser;
