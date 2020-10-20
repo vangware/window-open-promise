@@ -1,7 +1,7 @@
 {
   "name": "@vangware/window-open-promise",
   "description": "Promised Window.open",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -10,7 +10,7 @@
     "url": "https://github.com/vangware/window-open-promise/issues"
   },
   "dependencies": {
-    "@vangware/utils": "^4.3.0"
+    "@vangware/utils": "^4.3.1"
   },
   "devDependencies": {
     "@types/prettier": "^2.1.5",
