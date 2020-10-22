@@ -1,7 +1,7 @@
 {
   "name": "@vangware/window-open-promise",
   "description": "Promised Window.open",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -43,8 +43,8 @@
     }
   },
   "files": [
-    "cjs",
-    "esm"
+    "cjs/**/*",
+    "esm/**/*"
   ],
   "homepage": "https://window-open-promise.vangware.com",
   "husky": {
