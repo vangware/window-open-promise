@@ -1,25 +1,48 @@
 import { isNull } from "@vangware/utils";
 import { ERROR_MESSAGE } from "./constants";
 import { featureParser } from "./featureParser";
-import { WindowOpenPromiseFunction } from "./WindowOpenPromiseFunction";
+import { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
 
 /**
  * Promised Window.open.
- * @param options - WindowOpenPromise options.
+ *
+ * @example
+ * ```typescript
+ * const windowOpen = windowOpenPromise(window);
+ * windowOpen({
+ * 	url: "https://example.com",
+ * 	top: 10,
+ *	left: 10
+ * })
+ * 	.then(newWindow => {
+ * 		newWindow.console.log("This will log in the new window.");
+ * 		newWindow.addEventListener("beforeunload", _event => {
+ * 			console.log("This will log when the new window is closed.");
+ * 		});
+ * 	})
+ * 	.catch(_error => {
+ * 		console.error("This will log if the new window can't be opened.");
+ * 	});
+ * ```
+ * @param window Window object (or maybe a mock :D).
+ * @returns Curried function with `window` in context.
  */
-export const windowOpenPromise: WindowOpenPromiseFunction = ({
-	url = "",
-	target = "",
-	features = {},
-	replace = false
-}) =>
-	new Promise<Window>((resolve, reject) =>
-		(newWindow =>
-			isNull(newWindow)
-				? reject(new Error(ERROR_MESSAGE))
-				: resolve(newWindow))(
-			window.open(url, target, featureParser(features), replace)
-		)
-	);
-
-export default windowOpenPromise;
+export const windowOpenPromise = (window: Pick<Window, "open">) =>
+	/**
+	 * @param options - WindowOpenPromise options.
+	 * @returns Promise with new window.
+	 */
+	({
+		url = "",
+		target = "",
+		replace = false,
+		...features
+	}: WindowOpenPromiseOptions = {}) =>
+		new Promise<Window>((resolve, reject) =>
+			(newWindow =>
+				isNull(newWindow)
+					? reject(new Error(ERROR_MESSAGE))
+					: resolve(newWindow))(
+				window.open(url, target, featureParser(features), replace)
+			)
+		);
