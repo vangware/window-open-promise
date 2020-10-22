@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 4.0.0
+
+- Removed defaults.
+- Removed deprecated options.
+- Changed function signature.
+- Added tests.
+- Added docs.
+
 ## 3.0.5
 
 - Dependency upgrade.
