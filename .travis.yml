@@ -1,10 +1,6 @@
 sudo: false
 language: node_js
-node_js: 14.8
+node_js: 15.0
 before_install: npm i -g pnpm
-install:
-  - npm i
-  - rimraf ./node_modules
-  - pnpm i
-  - rimraf ./node_modules
-  - yarn
+install: pnpm i
+after_success: pnpm run coverage # Send coverage to coveralls.io
