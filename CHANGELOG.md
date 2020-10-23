@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 4.0.3
+
+- :arrow_up: dependency upgrade.
+- :construction_worker: changed Travis with GitHub Actions.
+
 ## 4.0.2
 
 - Check if new `files` config works with Skypack score.

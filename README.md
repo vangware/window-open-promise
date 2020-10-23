@@ -1,6 +1,6 @@
 ![@vangware/window-open-promise logo](https://i.imgur.com/pzcGYAZ.png)
 
-![Build Status](https://img.shields.io/travis/vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://travis-ci.org/github/vangware/window-open-promise)
+![Build Status](https://img.shields.io/github/workflow/status/vangware/window-open-promise/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/window-open-promise/actions)
 ![Coverage](https://img.shields.io/coveralls/github/vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/window-open-promise)
 ![License](https://img.shields.io/npm/l/@vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/window-open-promise/blob/main/LICENSE)
 ![NPM Version](https://img.shields.io/npm/v/@vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/window-open-promise)
