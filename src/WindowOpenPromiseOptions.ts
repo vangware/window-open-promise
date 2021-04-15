@@ -23,11 +23,6 @@ export type WindowOpenPromiseOptions = {
 	readonly noOpener?: boolean;
 
 	/**
-	 * WindowOpenPromise replace.
-	 */
-	readonly replace?: boolean;
-
-	/**
 	 * WindowOpenPromise is resizable.
 	 */
 	readonly resizable?: boolean;

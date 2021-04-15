@@ -2,10 +2,10 @@ import { suite } from "@vangware/test";
 import { windowOpenPromise } from "../src/windowOpenPromise";
 
 const windowOpen = windowOpenPromise({
-	open: (url, target, features, replace) =>
+	// eslint-disable-next-line max-params
+	open: (url, target, features) =>
 		(({
 			features,
-			replace,
 			target,
 			url
 		} as unknown) as Window)
@@ -25,14 +25,12 @@ export default suite([
 			left: 100,
 			menuBar: true,
 			noOpener: true,
-			replace: true,
 			scrollbars: false,
 			target: "target",
 			url: "url"
 		}).catch(_ => "Error"),
 		wanted: ({
 			features: "height=100,left=100,menubar=1,noopener=1,scrollbars=0",
-			replace: true,
 			target: "target",
 			url: "url"
 		} as unknown) as Window
@@ -45,7 +43,6 @@ export default suite([
 			left: 100,
 			menuBar: true,
 			noOpener: true,
-			replace: true,
 			scrollbars: false,
 			target: "target",
 			url: "url"
