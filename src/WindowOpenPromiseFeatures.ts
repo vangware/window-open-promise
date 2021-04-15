@@ -1,9 +1,9 @@
-import { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
+import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
 
 /**
  * WindowOpenPromise features.
  */
 export type WindowOpenPromiseFeatures = Omit<
 	WindowOpenPromiseOptions,
-	"url" | "target" | "replace"
+	"replace" | "target" | "url"
 >;
