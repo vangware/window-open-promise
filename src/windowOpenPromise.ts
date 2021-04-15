@@ -1,7 +1,7 @@
 import { isNull } from "@vangware/utils";
 import { ERROR_MESSAGE } from "./constants";
 import { featureParser } from "./featureParser";
-import { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
+import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
 
 /**
  * Promised Window.open.
@@ -27,22 +27,18 @@ import { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
  * @param window Window object (or maybe a mock :D).
  * @returns Curried function with `window` in context.
  */
-export const windowOpenPromise = (window: Pick<Window, "open">) =>
+export const windowOpenPromise = (window: Readonly<Pick<Window, "open">>) =>
 	/**
 	 * @param options - WindowOpenPromise options.
 	 * @returns Promise with new window.
 	 */
-	({
-		url = "",
-		target = "",
-		replace = false,
-		...features
-	}: WindowOpenPromiseOptions = {}) =>
+	({ url = "", target = "", ...features }: WindowOpenPromiseOptions = {}) =>
+		// eslint-disable-next-line max-params
 		new Promise<Window>((resolve, reject) =>
 			(newWindow =>
 				isNull(newWindow)
 					? reject(new Error(ERROR_MESSAGE))
 					: resolve(newWindow))(
-				window.open(url, target, featureParser(features), replace)
+				window.open(url, target, featureParser(features))
 			)
 		);
