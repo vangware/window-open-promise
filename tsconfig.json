@@ -1,29 +1,23 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": [
-      "dom",
-      "es2018",
-      "ESNext.Array",
-      "ESNext.BigInt"
-    ],
-    "listEmittedFiles": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "newLine": "LF",
-    "noEmitOnError": true,
-    "noUnusedLocals": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedParameters": true,
-    "outDir": "./cjs",
-    "preserveConstEnums": true,
-    "strict": true,
-    "target": "ES2018"
-  },
-  "include": [
-    "src/*.ts",
-    "src/**/*.ts",
-    "tests/**/*.ts"
-  ]
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"declaration": true,
+		"extendedDiagnostics": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"importsNotUsedAsValues": "error",
+		"lib": ["DOM", "ES2019", "ESNext.Array", "ESNext.BigInt"],
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"newLine": "LF",
+		"noEmitOnError": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "./cjs",
+		"preserveConstEnums": true,
+		"strict": true,
+		"target": "ES2019"
+	},
+	"include": ["src/*.ts", "src/**/*.ts", "tests/**/*.ts"]
 }

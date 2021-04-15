@@ -19,19 +19,19 @@ import { windowOpenPromise } from "@vangware/window-open-promise";
 const windowOpen = windowOpenPromise(window);
 
 windowOpen({
-    url: "https://example.com", // URL is not required, you can open a blank window
-    top: 10,
-    left: 10
+	url: "https://example.com", // URL is not required, you can open a blank window
+	top: 10,
+	left: 10
 })
-    .then(newWindow => {
-        newWindow.console.log("This will log in the new window.");
-        newWindow.addEventListener("beforeunload", _event => {
-            console.log("This will log when the new window is closed.");
-        });
-    })
-    .catch(_error => {
-        console.error("This will log if the new window can't be opened.");
-    });
+	.then(newWindow => {
+		newWindow.console.log("This will log in the new window.");
+		newWindow.addEventListener("beforeunload", _event => {
+			console.log("This will log when the new window is closed.");
+		});
+	})
+	.catch(_error => {
+		console.error("This will log if the new window can't be opened.");
+	});
 ```
 
 ### 🦕 Deno
@@ -42,17 +42,17 @@ import { windowOpenPromise } from "https://cdn.skypack.dev/@vangware/window-open
 const windowOpen = windowOpenPromise(window);
 
 try {
-    const newWindow = await windowOpen({
-        url: "https://example.com", // URL is not required, you can open a blank window
-        top: 10,
-        left: 10
-    })
-    newWindow.console.log("This will log in the new window.");
-    newWindow.addEventListener("beforeunload", _event => {
-      console.log("This will log when the new window is closed.");
-    });
+	const newWindow = await windowOpen({
+		url: "https://example.com", // URL is not required, you can open a blank window
+		top: 10,
+		left: 10
+	});
+	newWindow.console.log("This will log in the new window.");
+	newWindow.addEventListener("beforeunload", _event => {
+		console.log("This will log when the new window is closed.");
+	});
 } catch (_error) {
-    console.error("This will log if the new window can't be opened.");
+	console.error("This will log if the new window can't be opened.");
 }
 ```
 
@@ -67,4 +67,3 @@ Changelog can be found [HERE](https://github.com/vangware/window-open-promise/bl
 ## Test coverage
 
 Test coverage can be found [HERE](https://coveralls.io/github/vangware/window-open-promise).
-
