@@ -13,8 +13,8 @@ export default suite([
 			resizable: true,
 			scrollbars: false
 		}),
-		wanted:
-			"height=100,left=100,menubar=1,noopener=1,resizable=1,scrollbars=0"
+		// eslint-disable-next-line max-len
+		wanted: "height=100,left=100,menubar=1,noopener=1,resizable=1,scrollbars=0"
 	},
 	{
 		given: "an empty object",

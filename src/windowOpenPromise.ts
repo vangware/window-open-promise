@@ -27,7 +27,8 @@ import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
  * @param window Window object (or maybe a mock :D).
  * @returns Curried function with `window` in context.
  */
-export const windowOpenPromise = (window: Readonly<Pick<Window, "open">>) =>
+export const windowOpenPromise =
+	(window: Readonly<Pick<Window, "open">>) =>
 	/**
 	 * @param options - WindowOpenPromise options.
 	 * @returns Promise with new window.
