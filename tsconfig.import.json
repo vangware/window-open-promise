@@ -2,7 +2,7 @@
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"module": "esnext",
-		"outDir": "./esm"
+		"outDir": "./dist/import"
 	},
 	"exclude": ["./tests/**/*"]
 }
