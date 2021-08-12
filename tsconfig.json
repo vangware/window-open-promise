@@ -14,7 +14,7 @@
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"outDir": "./cjs",
+		"outDir": "./dist/require",
 		"preserveConstEnums": true,
 		"strict": true,
 		"target": "ES2019"
