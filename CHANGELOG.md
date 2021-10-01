@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.2.5
+
+-   :arrow_up: dependency upgrade.
+-   :art: typedoc update.
+-   :rotating_light: update code based on new linting rules.
+
 ## 4.2.4
 
 -   :arrow_up: dependency upgrade.

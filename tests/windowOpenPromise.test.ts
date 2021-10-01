@@ -7,13 +7,13 @@ const windowOpen = windowOpenPromise({
 		({
 			features,
 			target,
-			url
-		} as unknown as Window)
+			url,
+		} as unknown as Window),
 });
 
 const windowOpenFail = windowOpenPromise({
 	// eslint-disable-next-line no-null/no-null
-	open: _ => null as unknown as Window
+	open: _ => null as unknown as Window,
 });
 
 export default suite([
@@ -27,13 +27,13 @@ export default suite([
 			noOpener: true,
 			scrollbars: false,
 			target: "target",
-			url: "url"
+			url: "url",
 		}).catch(_ => "Error"),
 		wanted: {
 			features: "height=100,left=100,menubar=1,noopener=1,scrollbars=0",
 			target: "target",
-			url: "url"
-		} as unknown as Window
+			url: "url",
+		} as unknown as Window,
 	},
 	{
 		given: "an object with options and a blocked window",
@@ -45,8 +45,8 @@ export default suite([
 			noOpener: true,
 			scrollbars: false,
 			target: "target",
-			url: "url"
+			url: "url",
 		}).catch(_ => "Error"),
-		wanted: "Error" as unknown as Window
-	}
+		wanted: "Error" as unknown as Window,
+	},
 ]);

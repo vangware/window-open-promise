@@ -3,7 +3,7 @@ import { arrayJoin, arrayMap, isBoolean, objectEntries } from "@vangware/utils";
 import {
 	FEATURE_DISABLED,
 	FEATURE_ENABLED,
-	FEATURE_SEPARATOR
+	FEATURE_SEPARATOR,
 } from "./constants";
 import type { WindowOpenPromiseFeatures } from "./WindowOpenPromiseFeatures";
 
@@ -31,6 +31,6 @@ export const featureParser = (features: WindowOpenPromiseFeatures = {}) =>
 							? FEATURE_ENABLED
 							: FEATURE_DISABLED
 						: value
-				}`
-		)(objectEntries(features as Required<WindowOpenPromiseFeatures>))
+				}`,
+		)(objectEntries(features as Required<WindowOpenPromiseFeatures>)),
 	);
