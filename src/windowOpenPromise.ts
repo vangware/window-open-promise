@@ -40,6 +40,6 @@ export const windowOpenPromise =
 				isNull(newWindow)
 					? reject(new Error(ERROR_MESSAGE))
 					: resolve(newWindow))(
-				window.open(url, target, featureParser(features))
-			)
+				window.open(url, target, featureParser(features)),
+			),
 		);

@@ -11,15 +11,15 @@ export default suite([
 			menuBar: true,
 			noOpener: true,
 			resizable: true,
-			scrollbars: false
+			scrollbars: false,
 		}),
 		// eslint-disable-next-line max-len
-		wanted: "height=100,left=100,menubar=1,noopener=1,resizable=1,scrollbars=0"
+		wanted: "height=100,left=100,menubar=1,noopener=1,resizable=1,scrollbars=0",
 	},
 	{
 		given: "an empty object",
 		must: "return an empty string",
 		received: featureParser({}),
-		wanted: ""
-	}
+		wanted: "",
+	},
 ]);
