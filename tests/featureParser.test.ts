@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { featureParser } from "../src/featureParser";
+import { featureParser } from "../src/featureParser.js";
 
 export default suite([
 	{

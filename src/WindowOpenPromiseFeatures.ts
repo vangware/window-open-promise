@@ -1,4 +1,4 @@
-import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
+import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions.js";
 
 /**
  * WindowOpenPromise features.

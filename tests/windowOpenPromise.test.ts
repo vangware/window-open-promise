@@ -1,5 +1,5 @@
 import { suite } from "@vangware/test";
-import { windowOpenPromise } from "../src/windowOpenPromise";
+import { windowOpenPromise } from "../src/windowOpenPromise.js";
 
 const windowOpen = windowOpenPromise({
 	// eslint-disable-next-line max-params

@@ -1,7 +1,7 @@
 import { isNull } from "@vangware/utils";
-import { ERROR_MESSAGE } from "./constants";
-import { featureParser } from "./featureParser";
-import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions";
+import { ERROR_MESSAGE } from "./constants.js";
+import { featureParser } from "./featureParser.js";
+import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions.js";
 
 /**
  * Promised Window.open.
