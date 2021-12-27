@@ -4,8 +4,8 @@ import {
 	FEATURE_DISABLED,
 	FEATURE_ENABLED,
 	FEATURE_SEPARATOR,
-} from "./constants";
-import type { WindowOpenPromiseFeatures } from "./WindowOpenPromiseFeatures";
+} from "./constants.js";
+import type { WindowOpenPromiseFeatures } from "./WindowOpenPromiseFeatures.js";
 
 /**
  * Parses features object into features string.
