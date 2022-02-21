@@ -1,7 +1,7 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { featureParser } from "../src/featureParser.js";
 
-export default suite([
+export default [
 	{
 		given: "an object with features",
 		must: "return a string with the proper values",
@@ -22,4 +22,4 @@ export default suite([
 		received: featureParser({}),
 		wanted: "",
 	},
-]);
+] as Tests<string>;
