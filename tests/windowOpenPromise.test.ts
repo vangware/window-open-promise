@@ -1,4 +1,4 @@
-import { suite } from "@vangware/test";
+import type { Tests } from "@vangware/test";
 import { windowOpenPromise } from "../src/windowOpenPromise.js";
 
 const windowOpen = windowOpenPromise({
@@ -16,7 +16,7 @@ const windowOpenFail = windowOpenPromise({
 	open: _ => null as unknown as Window,
 });
 
-export default suite([
+export default [
 	{
 		given: "an object with options",
 		must: "return mock with the same options",
@@ -49,4 +49,4 @@ export default suite([
 		}).catch(_ => "Error"),
 		wanted: "Error" as unknown as Window,
 	},
-]);
+] as Tests<Window>;
