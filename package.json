@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/window-open-promise",
 	"description": "🪟 Promised Window.open();",
-	"version": "5.0.2",
+	"version": "5.0.3",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
