@@ -9,12 +9,12 @@
 	},
 	"bugs": "https://github.com/vangware/window-open-promise/issues",
 	"dependencies": {
-		"@evilmartians/lefthook-installer": "^1.0.5",
-		"@vangware/iterables": "^1.0.0",
+		"@vangware/iterables": "^1.0.1",
 		"@vangware/predicates": "^1.0.2",
 		"@vangware/types": "^3.0.4"
 	},
 	"devDependencies": {
+		"@evilmartians/lefthook": "^1.0.5",
 		"@types/node": "^18.6.3",
 		"@vangware/configs": "^3.1.3",
 		"@vangware/test": "^9.1.23",
@@ -53,6 +53,7 @@
 		"clean": "rimraf ./dist",
 		"compile": "tsc --project tsconfig.dist.json",
 		"document": "typedoc",
+		"git:pre-push": "run-s --print-label clean pre-compile lint test document",
 		"lint": "eslint {src,tests}/**/*.ts",
 		"lint:fix": "eslint {src,tests}/**/*.ts --fix",
 		"pre-compile": "tsc --noemit --project tsconfig.dist.json",
