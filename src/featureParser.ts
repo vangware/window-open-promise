@@ -1,10 +1,6 @@
-import type { Entry } from "@vangware/utils";
-import { arrayJoin, arrayMap, isBoolean, objectEntries } from "@vangware/utils";
-import {
-	FEATURE_DISABLED,
-	FEATURE_ENABLED,
-	FEATURE_SEPARATOR,
-} from "./constants.js";
+import { objectToEntries } from "@vangware/iterables";
+import { featureJoin } from "./featureJoin.js";
+import { featureMap } from "./featureMap.js";
 import type { WindowOpenPromiseFeatures } from "./WindowOpenPromiseFeatures.js";
 
 /**
@@ -22,15 +18,8 @@ import type { WindowOpenPromiseFeatures } from "./WindowOpenPromiseFeatures.js";
  * @returns Parsed string.
  */
 export const featureParser = (features: WindowOpenPromiseFeatures = {}) =>
-	arrayJoin(FEATURE_SEPARATOR)(
-		arrayMap(
-			([feature, value]: Entry<Required<WindowOpenPromiseFeatures>>) =>
-				`${feature.toLocaleLowerCase()}=${
-					isBoolean(value)
-						? value
-							? FEATURE_ENABLED
-							: FEATURE_DISABLED
-						: value
-				}`,
-		)(objectEntries(features as Required<WindowOpenPromiseFeatures>)),
+	featureJoin(
+		featureMap(
+			objectToEntries(features as Required<WindowOpenPromiseFeatures>),
+		),
 	);

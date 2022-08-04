@@ -1,9 +1,7 @@
 <img alt="Vangware's Window Open Promise" src="./logo.svg" height="192" />
 
-![Build Status][build-status-badge]
-![Coverage][coverage-badge]
-![License][license-badge]
-![NPM Version][npm-version-badge]
+![Build Status][build-status-badge] ![Coverage][coverage-badge]
+![License][license-badge] ![NPM Version][npm-version-badge]
 ![Open Issues][open-issues-badge]
 
 🪟 Promised `Window.open();`.
@@ -22,13 +20,13 @@ windowOpen({
 	top: 10,
 	left: 10,
 })
-	.then((newWindow) => {
+	.then(newWindow => {
 		newWindow.console.log("This will log in the new window.");
-		newWindow.addEventListener("beforeunload", (_event) => {
+		newWindow.addEventListener("beforeunload", _event => {
 			console.log("This will log when the new window is closed.");
 		});
 	})
-	.catch((_error) => {
+	.catch(_error => {
 		console.error("This will log if the new window can't be opened.");
 	});
 ```
@@ -47,7 +45,7 @@ try {
 		left: 10,
 	});
 	newWindow.console.log("This will log in the new window.");
-	newWindow.addEventListener("beforeunload", (_event) => {
+	newWindow.addEventListener("beforeunload", _event => {
 		console.log("This will log when the new window is closed.");
 	});
 } catch (_error) {
@@ -57,7 +55,10 @@ try {
 
 ## Documentation
 
-Documentation can be found [HERE][documentation]. It is auto-generated with [typedoc][typedoc] based on the JSDocs and the types in the source. Shouldn't be necessary to read this, code editors like [VSCode][vscode] integrate the documentation in the UI.
+Documentation can be found [HERE][documentation]. It is auto-generated with
+[typedoc][typedoc] based on the JSDocs and the types in the source. Shouldn't be
+necessary to read this, code editors like [VSCode][vscode] integrate the
+documentation in the UI.
 
 ## Changelog
 
@@ -69,13 +70,19 @@ Test coverage can be found [HERE][coverage].
 
 <!-- Reference -->
 
-[build-status-badge]: https://img.shields.io/github/workflow/status/vangware/window-open-promise/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/window-open-promise/actions
-[changelog]: https://github.com/vangware/window-open-promise/blob/main/CHANGELOG.md
-[coverage-badge]: https://img.shields.io/coveralls/github/vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/window-open-promise
+[build-status-badge]:
+	https://img.shields.io/github/workflow/status/vangware/window-open-promise/Test.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/window-open-promise/actions
+[changelog]:
+	https://github.com/vangware/window-open-promise/blob/main/CHANGELOG.md
+[coverage-badge]:
+	https://img.shields.io/coveralls/github/vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://coveralls.io/github/vangware/window-open-promise
 [coverage]: https://coveralls.io/github/vangware/window-open-promise
 [documentation]: https://window-open-promise.vangware.com
-[license-badge]: https://img.shields.io/npm/l/@vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/window-open-promise/blob/main/LICENSE
-[npm-version-badge]: https://img.shields.io/npm/v/@vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/window-open-promise
-[open-issues-badge]: https://img.shields.io/github/issues/vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/window-open-promise/issues
+[license-badge]:
+	https://img.shields.io/npm/l/@vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/window-open-promise/blob/main/LICENSE
+[npm-version-badge]:
+	https://img.shields.io/npm/v/@vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/@vangware/window-open-promise
+[open-issues-badge]:
+	https://img.shields.io/github/issues/vangware/window-open-promise.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/window-open-promise/issues
 [typedoc]: https://typedoc.org/
 [vscode]: https://code.visualstudio.com/
