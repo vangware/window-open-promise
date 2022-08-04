@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 5.1.1
+
+-   :bug: fix `@evilmartians/lefthook` dependency mistake.
+-   :bug: fix `@evilmartians/lefthook` bad config.
+
 ## 5.1.0
 
 -   :heavy_minus_sign: remove `@arkweid/lefthook`.
