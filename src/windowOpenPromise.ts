@@ -1,4 +1,4 @@
-import { isNull } from "@vangware/utils";
+import { isNull } from "@vangware/predicates";
 import { ERROR_MESSAGE } from "./constants.js";
 import { featureParser } from "./featureParser.js";
 import type { WindowOpenPromiseOptions } from "./WindowOpenPromiseOptions.js";

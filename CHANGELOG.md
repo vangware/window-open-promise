@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 5.1.0
+
+-   :heavy_minus_sign: remove `@arkweid/lefthook`.
+-   :heavy_minus_sign: remove `@vangware/utils`.
+-   :heavy_plus_sign: add `@evilmartians/lefthook`.
+-   :heavy_plus_sign: add `@vangware/iterables`.
+-   :heavy_plus_sign: add `@vangware/predicates`.
+-   :heavy_plus_sign: add `@vangware/types`.
+-   :building_construction: make updates related to util changes.
+
 ## 5.0.4
 
 -   :arrow_up: dependency upgrade.
@@ -266,7 +276,8 @@ All notable changes to this project will be documented in this file.
 ## 2.4.5
 
 -   Dependency upgrade.
--   `README.md` update with example of the options received by windowOpenPromise.
+-   `README.md` update with example of the options received by
+    windowOpenPromise.
 -   Version bump.
 
 ## 2.4.4
