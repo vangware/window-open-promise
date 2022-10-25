@@ -5,172 +5,177 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 5.1.9
+
+-   ⬆️ dependency upgrade.
+-   📝 update `CHANGELOG.md` to use emojis instead of aliases.
+
 ## 5.1.8
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.1.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.1.6
 
--   :arrow_up: dependency upgrade.
--   :wrench: add `"sideEffects": false` to `package.json`.
+-   ⬆️ dependency upgrade.
+-   🔧 add `"sideEffects": false` to `package.json`.
 
 ## 5.1.5
 
--   :arrow_up: dependency upgrade.
--   :memo: update docs.
+-   ⬆️ dependency upgrade.
+-   📝 update docs.
 
 ## 5.1.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.1.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.1.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.1.1
 
--   :bug: fix `@evilmartians/lefthook` dependency mistake.
--   :bug: fix `@evilmartians/lefthook` bad config.
+-   🐛 fix `@evilmartians/lefthook` dependency mistake.
+-   🐛 fix `@evilmartians/lefthook` bad config.
 
 ## 5.1.0
 
--   :heavy_minus_sign: remove `@arkweid/lefthook`.
--   :heavy_minus_sign: remove `@vangware/utils`.
--   :heavy_plus_sign: add `@evilmartians/lefthook`.
--   :heavy_plus_sign: add `@vangware/iterables`.
--   :heavy_plus_sign: add `@vangware/predicates`.
--   :heavy_plus_sign: add `@vangware/types`.
--   :building_construction: make updates related to util changes.
+-   ➖ remove `@arkweid/lefthook`.
+-   ➖ remove `@vangware/utils`.
+-   ➕ add `@evilmartians/lefthook`.
+-   ➕ add `@vangware/iterables`.
+-   ➕ add `@vangware/predicates`.
+-   ➕ add `@vangware/types`.
+-   🏗 make updates related to util changes.
 
 ## 5.0.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.0.3
 
--   :arrow_up: dependency upgrade.
--   :heavy_minus_sign: remove unneeded dependencies.
+-   ⬆️ dependency upgrade.
+-   ➖ remove unneeded dependencies.
 
 ## 5.0.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.0.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 5.0.0
 
--   :arrow_up: dependency upgrade.
--   :truck: move to ESM only.
+-   ⬆️ dependency upgrade.
+-   🚚 move to ESM only.
 
 ## 4.2.5
 
--   :arrow_up: dependency upgrade.
--   :art: typedoc update.
--   :rotating_light: update code based on new linting rules.
+-   ⬆️ dependency upgrade.
+-   🎨 typedoc update.
+-   🚨 update code based on new linting rules.
 
 ## 4.2.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.2.3
 
--   :bug: fix but with light theme in docs.
+-   🐛 fix but with light theme in docs.
 
 ## 4.2.2
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.2.1
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.2.0
 
--   :arrow_up: dependency upgrade.
--   :heavy_minus_sign: remove `husky` :tada:
--   :heavy_plus_sign: add `@arkweid/lefthook`.
--   :building_construction: change markdown files to use references.
--   :bento: update logo in `README.md`.
--   :building_construction: update outDir to single `dist` directory.
+-   ⬆️ dependency upgrade.
+-   ➖ remove `husky` :tada:
+-   ➕ add `@arkweid/lefthook`.
+-   🏗 change markdown files to use references.
+-   🍱 update logo in `README.md`.
+-   🏗 update outDir to single `dist` directory.
 
 ## 4.1.6
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.1.5
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.1.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.1.3
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.1.2
 
--   :arrow_up: dependency upgrade.
--   :wrench: update GitHub actions.
+-   ⬆️ dependency upgrade.
+-   🔧 update GitHub actions.
 
 ## 4.1.1
 
--   :arrow_up: dependency upgrade.
--   :art: new prettier config.
+-   ⬆️ dependency upgrade.
+-   🎨 new prettier config.
 
 ## 4.1.0
 
--   :arrow_up: dependency upgrade.
--   :wrench: update `package.json` adding `lint:fix` script.
--   :wrench: update `package.json` `docs` script.
--   :building_construction: update code with new linting rules.
--   :memo: update docs.
+-   ⬆️ dependency upgrade.
+-   🔧 update `package.json` adding `lint:fix` script.
+-   🔧 update `package.json` `docs` script.
+-   🏗 update code with new linting rules.
+-   📝 update docs.
 
 ## 4.0.10
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.9
 
--   :arrow_up: dependency upgrade.
--   :wrench: update package.json adding `postpublish`.
--   :memo: update docs theme.
+-   ⬆️ dependency upgrade.
+-   🔧 update package.json adding `postpublish`.
+-   📝 update docs theme.
 
 ## 4.0.8
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.7
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.6
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.5
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.4
 
--   :arrow_up: dependency upgrade.
+-   ⬆️ dependency upgrade.
 
 ## 4.0.3
 
--   :arrow_up: dependency upgrade.
--   :construction_worker: changed Travis with GitHub Actions.
+-   ⬆️ dependency upgrade.
+-   👷 changed Travis with GitHub Actions.
 
 ## 4.0.2
 
