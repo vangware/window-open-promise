@@ -1,8 +1,7 @@
 <img alt="Vangware's Window Open Promise" src="./logo.svg" height="192" />
 
-![Build Status][build-status-badge] ![Coverage][coverage-badge]
-![License][license-badge] ![NPM Version][npm-version-badge]
-![Open Issues][open-issues-badge]
+![Coverage][coverage-badge] ![License][license-badge]
+![NPM Version][npm-version-badge] ![Open Issues][open-issues-badge]
 
 🪟 Promised `Window.open();`.
 
@@ -70,8 +69,6 @@ Test coverage can be found [HERE][coverage].
 
 <!-- Reference -->
 
-[build-status-badge]:
-	https://img.shields.io/github/workflow/status/vangware/window-open-promise/Test.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/window-open-promise/actions
 [changelog]:
 	https://github.com/vangware/window-open-promise/blob/main/CHANGELOG.md
 [coverage-badge]:
