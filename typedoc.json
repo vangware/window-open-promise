@@ -3,5 +3,5 @@
 	"cname": "window-open-promise.vangware.com",
 	"entryPoints": ["./src"],
 	"extends": ["@vangware/configs/typedoc.json"],
-	"name": "@vangware/window-open-promise"
+	"name": "Window Open Promise by Vangware"
 }
