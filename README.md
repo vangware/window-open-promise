@@ -33,7 +33,7 @@ windowOpen({
 ### 🦕 Deno
 
 ```typescript
-import { windowOpenPromise } from "https://cdn.skypack.dev/@vangware/window-open-promise?dts";
+import { windowOpenPromise } from "https://esm.sh/@vangware/window-open-promise";
 
 const windowOpen = windowOpenPromise(window);
 
