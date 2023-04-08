@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 5.1.17
+
+-   ⬆️ dependency upgrade.
+-   🔧 docs are now generated in CI.
+
 ## 5.1.16
 
 -   ⬆️ dependency upgrade.
