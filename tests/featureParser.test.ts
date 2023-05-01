@@ -24,4 +24,4 @@ export default [
 		received: () => featureParser({}),
 		wanted: () => "",
 	},
-] as Tests<string>;
+] satisfies Tests<string>;
