@@ -53,4 +53,4 @@ export default [
 			}).catch(_ => "Error"),
 		wanted: () => "Error" as unknown as Window,
 	},
-] as Tests<Window>;
+] satisfies Tests<Window | string>;
