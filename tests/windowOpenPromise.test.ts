@@ -8,7 +8,7 @@ const windowOpen = windowOpenPromise({
 			features,
 			target,
 			url,
-		} as unknown as Window),
+		}) as unknown as Window,
 });
 
 const windowOpenFail = windowOpenPromise({
@@ -36,7 +36,7 @@ export default [
 					"height=100,left=100,menubar=1,noopener=1,scrollbars=0",
 				target: "target",
 				url: "url",
-			} as unknown as Window),
+			}) as unknown as Window,
 	},
 	{
 		given: "an object with options and a blocked window",
